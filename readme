@@ -1,0 +1,18 @@
+TO RUN ====> npm run start-dev for dev
+npm run start-server for prod
+
+
+
+// to prevent eavesdropping all data/packets from client to server or server to client
+// are encrypted and passed through a SSL tunnel that makes data encrypted
+// HTTPS (for this a SSL certificate is required, this certificate is generally provided
+// by the host provider(trusted party) which indictaes that the site is secure)
+
+// SSL consists of a public key and a private key
+// a SSL certificate is installed on client machine
+// when visiting a server the public associate/installed on the client machine for that server
+// goes to the server and is validated using the private key (which only server has)
+
+// however we can create a custom/selfsigned (our own ceriticate for testing on localhost)
+// to generate a SSL Certificate:
+openssl req -nodes -new -x509 -keyout server.key -out server.cert

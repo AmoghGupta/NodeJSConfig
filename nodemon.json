@@ -1,0 +1,10 @@
+{
+    "env":{
+        "MONGO_URL": "mongodb://localhost:27017/",
+        "MONGO_DBNAME" :"node-complete",
+        "MONGODB_STORE_COLLECTION": "sessions",
+        "PORT": 3000,
+        "SESSION_SECRET":"my secret",
+        "SENDGRIDMAIL_KEY": "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"
+    }
+}
